@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div id="container">
+        <div id="board">
+            <script>
+                for (i = 0; i < (16 * 16); i++) {
+                    let board = document.createElement('div');
+                    board.className = 'square';
+
+                    document.getElementById('board').appendChild(board);
+                }
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>
